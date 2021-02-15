@@ -1,0 +1,13 @@
+<main>
+  <h1>n-back Game!</h1>
+  <nb-radio-group [(value)]="level" status="info">
+    <nb-radio value="2" checked="true"><label>2</label></nb-radio>
+    <nb-radio value="3"><label>3</label></nb-radio>
+    <nb-radio value="4"><label>4</label></nb-radio>
+    <nb-radio value="5"><label>5</label></nb-radio>
+  </nb-radio-group>
+  <button class="btn" nbButton hero [routerLink]="['/howto']">How To</button>
+  <button class="btn" nbButton hero [routerLink]="['/play', level]">
+    Play
+  </button>
+</main>

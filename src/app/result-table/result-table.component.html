@@ -1,0 +1,24 @@
+<div id="main">
+  <h1>{{ this.level }}-back 트레이닝</h1>
+  <div class="table">
+    <div class="column">
+      <div class="box firstBox">문제</div>
+      <div class="box firstBox">{{ this.level }}-back</div>
+      <div class="box firstBox">정답</div>
+    </div>
+    <div class="column" *ngFor="let a of arr1">
+      <div class="box">{{ a }}</div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="column" *ngFor="let a of arr2; let i = index">
+      <div class="box">{{ a }}</div>
+      <div class="box">{{ questionArr[i] }}</div>
+      <div class="box" *ngIf="a == questionArr[i]; else different">O</div>
+      <ng-template #different>
+        <div class="box">X</div>
+      </ng-template>
+    </div>
+  </div>
+  <button class="btn" nbButton hero [routerLink]="['/home']">Home</button>
+</div>
