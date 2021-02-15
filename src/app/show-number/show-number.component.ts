@@ -23,9 +23,6 @@ export class ShowNumberComponent implements OnInit {
       this.strArr.push("" + q);
       this.strArr.push(" ");
     }
-    for(let i=0; i< this.strArr.length; ++i) {
-      console.log(i, this.strArr[i])
-    }
   }
 
   show() {

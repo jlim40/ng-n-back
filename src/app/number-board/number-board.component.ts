@@ -8,10 +8,6 @@ import { Router, ActivatedRoute } from '@angular/router'
 })
 export class NumberBoardComponent implements OnInit {
 
-  // ha: number[];
-  // result: number;
-  // idx: number;
-
   numArr: number[];
   questionArr: number[];
   strArr: string[];
@@ -45,7 +41,6 @@ export class NumberBoardComponent implements OnInit {
       let r = Math.floor(Math.random() * 10);
       if(this.numArr.indexOf(r) === -1)
         this.numArr.push(r);
-      console.log('numArr', this.numArr);
     }
 
     this.questionArr = [];
@@ -56,7 +51,6 @@ export class NumberBoardComponent implements OnInit {
     }
 
     this.finish();
-
   }
 
   finish() {

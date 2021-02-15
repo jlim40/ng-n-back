@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, APP_INITIALIZER } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'result-table',
@@ -20,8 +20,6 @@ export class ResultTableComponent implements OnInit {
   initialize() {
     this.arr1 = this.questionArr.slice(0, this.level);
     this.arr2 = this.questionArr.slice(this.level);
-    console.log(this.arr1);
-    console.log(this.arr2);
   }
 
 }
