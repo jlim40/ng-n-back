@@ -54,8 +54,8 @@ export class NumberBoardComponent implements OnInit {
   }
 
   finish() {
-    const delay = (+this.level + 10) * 4000 + 2000;
-    // const delay = 0;
+    // const delay = (+this.level + 10) * 4000 + 2000;
+    const delay = 0;
     setTimeout(() => {
       this.zone.run(() => {
         this.showNum = false;

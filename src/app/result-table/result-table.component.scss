@@ -8,14 +8,14 @@
   align-items: center;
 }
 
-.table {
+#main .table {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-h1 {
+#main h1 {
   color: #515151;
   font-weight: 700;
   font-size: 3rem;
@@ -49,4 +49,38 @@ h1 {
   margin: 1.2rem;
   color: #515151;
   background: #e7e4e5;
+}
+
+@media only screen and (max-width: 500px) {
+  #main {
+    width: 100%;
+  }
+
+  #main h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  #main .column {
+    margin-bottom: 1.5rem;
+  }
+
+  #main .column .box {
+    width: 3.3rem;
+    height: 2.8rem;
+    font-size: 1.1rem;
+    padding-top: 0.8rem;
+  }
+
+  #main .column .firstBox {
+    width: 6rem;
+  }
+
+  #main .btn {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    margin: 1rem;
+  }
 }
