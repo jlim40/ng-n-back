@@ -26,12 +26,14 @@ label {
   margin-left: 0.8rem;
 }
 
-#main .btn {
-  width: 13rem;
-  height: 4rem;
+#main button {
+  width: 12rem;
+  height: 3.5rem;
   font-size: 1.5rem;
   border-radius: 15px;
   margin: 1.2rem;
+  color: #515151;
+  background: #e7e4e5;
 }
 
 @media only screen and (max-width: 500px) {
